@@ -1,6 +1,16 @@
-<h1>Restaurants#show</h1>
-<p>Find me in app/views/restaurants/show.html.erb</p>
-<h2><%= @restaurant.name %></h2>
-<p><%= @restaurant.address %></p>
-<p><%= @restaurant.phone number %></p>
-<p><%= @restaurant.category %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <ul class="list-group mb-3">
+         <li class="list-group-item">
+        <h2><%= @restaurant.name %></h2>
+        <p><%= @restaurant.address %></p>
+        <p><%= @restaurant.phone_number %></p>
+        <p><%= @restaurant.category %></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+ <%= link_to "Back", restaurants_path, class: 'btn btn-primary' %>
